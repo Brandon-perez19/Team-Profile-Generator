@@ -14,7 +14,10 @@
   Git clone the repository, run npm install
 
   ## Usage <br>
-  Once installed, you can run npm app.js to start the program and begin use
+  Once installed, you can run npm app.js to start the program and begin use <br>
+  
+  ## Video <br>
+  https://drive.google.com/file/d/1VkDxMJ79q0hU3j8_YVUv_z8KNnRdei6M/view
 
   ## Questions <br>
   Brandon-perez19 <br>
