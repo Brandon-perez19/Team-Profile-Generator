@@ -1,5 +1,4 @@
-import { pushObj } from "../src/page-template.js";
-import { Employee } from "./Employee.js";
+import { Employee } from "../lib/Employee";
 
 
 class Manager extends Employee{
@@ -16,7 +15,7 @@ class Manager extends Employee{
             email: this.email,
             OfficeNumber: this.OfficeNumber
         }
-        pushObj(ManagerObj);
+        return ManagerObj
     }
 }
 
