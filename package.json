@@ -1,13 +1,14 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "app.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Brandon-perez19/Team-Profile-Generator#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "inquirer": "^9.0.0",
     "jest": "^28.1.1"
   }

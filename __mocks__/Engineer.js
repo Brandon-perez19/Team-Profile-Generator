@@ -1,6 +1,4 @@
-import { pushObj } from "../src/page-template.js";
-import { Employee } from './Employee.js'
-
+import { Employee } from "../lib/Employee";
 
 class Engineer extends Employee {
     constructor(name, ID, email, github = " ") {
@@ -16,7 +14,7 @@ class Engineer extends Employee {
             email: this.email,
             github: this.github,
         }
-        pushObj(EngineerObj);
+        return EngineerObj;
     }
 };
 export { Engineer }
