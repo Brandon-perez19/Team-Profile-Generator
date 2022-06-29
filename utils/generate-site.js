@@ -1,7 +1,7 @@
 import { writeFile } from 'fs';
 
+//writes the HTML file based on the templates created in src.
 const createFile = (fileContent) => {
-    console.log("create file method was called")
     return new Promise((resolve, reject) => {
         writeFile('./dist/index.html', fileContent, err => {
             if (err) {

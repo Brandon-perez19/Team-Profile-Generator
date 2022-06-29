@@ -1,10 +1,12 @@
+//array that holds all employees
 var EmployeeArr = []
 
+//pushes to array
 const pushObj = (obj) => {
     EmployeeArr.push(obj);
-    console.log(EmployeeArr);
 }
 
+//generates employees cards on html. Filters array for employee classification (intern, manager, engineer)
 const generateCard = () => {
     return `
             ${EmployeeArr.filter(result => result.type == "Manager").map(({ name, type, ID, email, OfficeNumber }) => {
@@ -54,8 +56,8 @@ const generateCard = () => {
                             </section>`;}).join('')}`
 }
 
+//main html file
 const Markdown = () => {
-    console.log("Markdown function was called")
     return `
     <!Doctype html>
         <html lang='en'>

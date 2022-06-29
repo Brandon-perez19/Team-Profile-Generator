@@ -1,7 +1,6 @@
 import { Employee } from "../lib/Employee";
 
-
-class Manager extends Employee{
+class Manager extends Employee {
     constructor(name, ID, email, OfficeNumber = " ") {
         super(name, ID, email)
         this.OfficeNumber = OfficeNumber
@@ -19,4 +18,4 @@ class Manager extends Employee{
     }
 }
 
-export {Manager}
+export { Manager }
